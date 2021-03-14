@@ -14,24 +14,20 @@ public class Operacion {
     * Los argumentos son los que se colocan en la instancia de la clase
     * */
 
-    public int sumar(int x, int y){
+    public void sumar(int x, int y){
         suma = x + y;
-        return suma;
     }
 
-    public int restar(int x, int y){
+    public void restar(int x, int y){
         resta = x - y;
-        return resta;
     }
 
-    public int multiplicar(int x, int y){
+    public void multiplicar(int x, int y){
         multiplicacion = x * y;
-        return multiplicacion;
     }
 
-    public int dividir(int x, int y){
+    public void dividir(int x, int y){
         divicion = x / y;
-        return divicion;
     }
 
     public void mostrar_resultados(){
