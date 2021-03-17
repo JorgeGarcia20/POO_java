@@ -24,9 +24,9 @@ public class Atleta {
         return tiempo_carrera;
     }
 
-    public String mostrarDatos(){
-        return "Numero del atleta: " + numero_atleta + "\n" +
-                "Nombre del atleta: " + nombre + "\n" +
-                "Tiempo de carrera: " + tiempo_carrera;
+    public void mostrarDatos(){
+        System.out.println("Numero del atleta: " + numero_atleta);
+        System.out.println("Nombre del atleta: " + nombre);
+        System.out.println( "Tiempo de carrera: " + tiempo_carrera);
     }
 }

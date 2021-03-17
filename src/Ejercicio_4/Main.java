@@ -3,7 +3,7 @@ package Ejercicio_4;
 import java.util.Scanner;
 
 public class Main {
-
+    
     public static int masRapido(Atleta atleta[]){
         int indice = 0;
         float tiempo;
@@ -34,11 +34,13 @@ public class Main {
             System.out.println("Ingresa los datos del atleta "+ (i + 1));
             System.out.print("Ingresa el numero del atleta -> ");
             numeroAtleta = scanner.nextInt();
+
             System.out.print("Ingresa el nombre del atleta -> ");
-            nombreAtleta = scanner.nextLine();
-            scanner.nextLine();
-            System.out.print("Tiempo en el que finalizo la carrera -> ");
+            nombreAtleta = scanner.next();
+
+            System.out.print("Tiempo en el que finalizo la carrera ->");
             tiempoCarrera = scanner.nextFloat();
+
             System.out.println();
 
             atleta[i] = new Atleta(numeroAtleta, nombreAtleta, tiempoCarrera);
@@ -46,7 +48,7 @@ public class Main {
 
         indiceAtleta = masRapido(atleta);
         System.out.println("El atleta mas rapido es: ");
-        System.out.println(atleta[indiceAtleta].mostrarDatos());
+        atleta[indiceAtleta].mostrarDatos();
     }
 
 }
