@@ -34,6 +34,20 @@ public class NumeroComplejo {
         return  sumaImg;
     }
 
+    private int getMultiplicacionReal(int real1, int real2){
+        int multiplicacionReal = real1 * real2;
+        return multiplicacionReal;
+    }
+
+    private int getMultiplicacionRealImaginario(int real, int imaginario){
+        int multiplicacionRealImaginario = real * imaginario;
+        return multiplicacionRealImaginario;
+    }
+
+    private int getMultiplicacionImaginarioImaginario(int imaginario1, int imaginario2){
+        int multiplicacionImaginarioImaginario = imaginario1 * imaginario2;
+        return multiplicacionImaginarioImaginario;
+    }
 
     public void sumaCompleja(){
         System.out.println("(" + real1 + " + " + imaginario1 + "i) + (" + real2 + " + " + imaginario2 + "i)");
@@ -44,8 +58,8 @@ public class NumeroComplejo {
     public void multiplicacionCompleja(){
         System.out.println("(" + real1 + " + " + imaginario1 + "i) * (" + real2 + " + " + imaginario2 + "i)");
         System.out.println(real1 + "(" + real2 + " + "+ imaginario2 +"i"+ ") + " + imaginario1 + "i" + "(" + real2 + " + " + imaginario2 + "i" + ")");
-        System.out.println("(" + (real2*real1) +" + "+ (imaginario2*real1) + "i" + ") + (" + (real2*imaginario1) + "i" + " + " + (imaginario2*imaginario1)+"i^2"+ ")");
-
+        System.out.println(getMultiplicacionReal(real1, real2) +" + "+ getMultiplicacionRealImaginario(imaginario2, real1) + "i" + " + " + getMultiplicacionRealImaginario(real2,imaginario1) + "i" + " + " + getMultiplicacionImaginarioImaginario(imaginario1, imaginario2)+"i^2");
+        System.out.println((getMultiplicacionReal(real1, real2) + (getMultiplicacionImaginarioImaginario(imaginario1, imaginario2)) * -1) + " + "+ (getMultiplicacionRealImaginario(imaginario2, real1) + getMultiplicacionRealImaginario(real2,imaginario1)) + "i");
     }
 
 
