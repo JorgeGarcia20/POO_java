@@ -24,6 +24,12 @@ public class NumeroComplejo {
         this.imaginario2 = imaginario2;
     }
 
+    public NumeroComplejo(int real1, int real2, int imaginario1) {
+        this.real1 = real1;
+        this.real2 = real2;
+        this.imaginario1 = imaginario1;
+    }
+
     private int getSumaReal(){
         int sumaReal = real1 + real2;
         return sumaReal;
@@ -62,7 +68,16 @@ public class NumeroComplejo {
         System.out.println((getMultiplicacionReal(real1, real2) + (getMultiplicacionImaginarioImaginario(imaginario1, imaginario2)) * -1) + " + "+ (getMultiplicacionRealImaginario(imaginario2, real1) + getMultiplicacionRealImaginario(real2,imaginario1)) + "i");
     }
 
+    public boolean compararNumerosComplejos(){
+        if(real1 ==  real2 && imaginario1 == imaginario2){
+            return true;
+        }else{
+            return false;
+        }
+    }
 
-
-
+    public void multiplicarEnteroComplejo(){
+        System.out.println(real1 + "(" + real2 + " + " + imaginario1 + "i)");
+        System.out.println("(" + (real1 * real2) + " + " + (real1 * imaginario1) + "i)");
+    }
 }
