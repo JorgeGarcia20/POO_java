@@ -17,7 +17,7 @@ public class NumeroComplejo {
     private int imaginario2;
     private int entero;
 
-    public NumeroComplejo(int real1, int real2, int imaginario1, int imaginario2) {
+    public NumeroComplejo(int real1,int imaginario1, int real2, int imaginario2) {
         this.real1 = real1;
         this.real2 = real2;
         this.imaginario1 = imaginario1;
