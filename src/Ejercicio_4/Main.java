@@ -3,7 +3,7 @@ package Ejercicio_4;
 import java.util.Scanner;
 
 public class Main {
-    
+
     public static int masRapido(Atleta atleta[]){
         int indice = 0;
         float tiempo;
